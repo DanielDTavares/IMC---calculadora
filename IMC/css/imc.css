@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black !important;
+    margin: 0;
+    /* Remover margens padrão */
+}
+
+img {
+    transform: translate(30px, -5px) !important;
+}
+
+.central {
+    position: relative;
+    height: 96vh;
+    background-image: url(../img/gym.jpg);
+    background-size: 100% 100% !important;
+    margin-top: 0.6% !important;
+    padding: 13em !important;
+}
+
+#imc {
+    color: aliceblue !important;
+    text-align: center !important;
+    transform: translate(-30px, +30px) !important;
+}
+
+/* The animation code */
+@keyframes example {
+    0% {
+        color: red;
+        left: 00px;
+        top: 00px;
+    }
+
+    25% {
+        color: yellow;
+        left: 00px;
+        top: 70px;
+    }
+
+    50% {
+        color: blue;
+        left: 00px;
+        top: 0px;
+    }
+
+    75% {
+        color: green;
+        left: 00px;
+        top: 70px;
+    }
+
+    100% {
+        color: red;
+        left: 00px;
+        top: 00px;
+    }
+}
+
+/* The element to apply the animation to */
+#animacao {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: 10s;
+    animation-duration: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: 0;
+    animation-direction: alternate;
+}
+
+
+label,
+i,
+h1 {
+    transform: translate(30px, 70px) !important;
+    color: aliceblue !important;
+}
+
+.cal {
+    transform: translate(px, px) !important;
+}
+
+.resultado {
+    color: aliceblue;
+    width: 92%;
+    transform: translate(121px, 287px) !important;
+
+}
+
+#nome {
+    color: #00a028;
+    transform: translate(103px, 185px) !important;
+}
+
+button,
+input {
+    color: aliceblue !important;
+    height: 53px !important;
+    width: 400px !important;
+    transform: translate(+40px, -0px) !important;
+    background-color: #00b02c !important;
+    border-width: 0cm;
+    border-radius: 4.2px !important;
+    transform: translate(36px, 80px) !important;
+}
+
+#peso {
+    width: 20px;
+}
+
+input {
+    content: '<i class="fa-solid fa-ruler"></i>';
+    margin-bottom: 30px !important;
+    display: flex !important;
+    height: 59px !important;
+    width: 26em !important;
+    background-color: #888888 !important;
+    border-width: 0cm;
+    border-radius: 4.2px !important;
+    transform: translate(30px, 70px) !important;
+}
+
+.ct {
+    position: absolute;
+    height: 600px !important;
+    width: 515px !important;
+    background-color: rgb(69, 69, 69) !important;
+    border-style: solid !important;
+    border-width: 0.1em !important;
+    border-color: rgb(0, 0, 0) !important;
+    border-radius: 0.5em !important;
+
+    left: 50% !important;
+    top: 50% !important;
+
+    transform: translate(85px, -303px);
+}
+
+.input-box {
+    display: flex;
+    height: 0 !important;
+    width: 83% !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161616;
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 1px;
+    transform: translate(+34.2px, 55px) !important;
+}
+
+.box {
+    display: flex !important;
+    height: 0 !important;
+    width: 83.2% !important;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #161616;
+    padding: 2px;
+    border-radius: 3px;
+    margin-top: 1px;
+    transform: translate(+32.5px, 175px) !important;
+}
+
+/* Media queries para tornar o layout responsivo em dispositivos de diferentes tamanhos */
+@media only screen and (max-width: 768px) {
+
+    .resultado {
+        position: relative;
+        transform: translate(21px, 20px) !important;
+
+    }
+
+    .input-box {
+        transform: translate(+34.2px, 40px) !important;
+    }
+
+    .box {
+        transform: translate(+34.2px, 155px) !important;
+    }
+
+    #nome {
+        color: #00a028;
+        transform: translate(53px, 179px) !important;
+    }
+
+    .central {
+        padding: 8em !important;
+        /* Reduzir o espaçamento interno */
+    }
+
+    .nome {
+        text-align: center;
+    }
+
+    button,
+    input,
+    label {
+        max-width: 80%;
+        /* Ajustar a largura para preencher a tela */
+    }
+
+    .ct {
+        width: 70%;
+        /* Ajustar a largura do container para preencher a tela */
+        max-width: 400px;
+        /* Limitar a largura máxima do container */
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        /* Centralizar o elemento */
+    }
+}

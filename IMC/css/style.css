@@ -1,0 +1,29 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/gym.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.conteudo {
+    background-color: #3f3f3f !important;
+    padding: 15em !important;
+    margin-top: 1em !important;
+    border-radius: 0.5rem !important;
+    height: auto !important;
+    width: 100px !important;
+    gap: 2rem !important;
+    color: #ffffff !important;
+    color: #262626;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    gap: 3.5rem;
+}
