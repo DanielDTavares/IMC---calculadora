@@ -18,10 +18,10 @@ img {
 
 .central {
     position: relative;
-    height: 96vh;
+    height: 100vh;
     background-image: url(../img/gym.jpg);
     background-size: 100% 100% !important;
-    margin-top: 0.6% !important;
+    margin-top: 0.0% !important;
     padding: 13em !important;
 }
 
@@ -94,13 +94,24 @@ h1 {
 .resultado {
     color: aliceblue;
     width: 92%;
-    transform: translate(121px, 287px) !important;
+    transform: translate(121px, 306px) !important;
 
 }
 
 #nome {
-    color: #00a028;
-    transform: translate(103px, 185px) !important;
+    border-top: 1px solid #ffffff34 !important;
+    padding-top: 1.5rem !important;
+}
+
+#nome a {
+    color: #008826 !important;
+    display: flex !important;
+    align-items: center;
+    gap: 0.06rem !important;
+    font-size: 0.875rem !important;
+    text-decoration: none;
+    transition: color 0.5s !important;
+    transform: translate(103px, 170px) !important;
 }
 
 button,
@@ -108,6 +119,7 @@ input {
     color: aliceblue !important;
     height: 53px !important;
     width: 400px !important;
+    padding: 10px !important;
     transform: translate(+40px, -0px) !important;
     background-color: #00b02c !important;
     border-width: 0cm;
@@ -157,7 +169,7 @@ input {
     padding: 2px;
     border-radius: 3px;
     margin-top: 1px;
-    transform: translate(+34.2px, 55px) !important;
+    transform: translate(+34.2px, 35px) !important;
 }
 
 .box {
