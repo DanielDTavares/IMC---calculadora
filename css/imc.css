@@ -231,7 +231,7 @@ input {
         /* Limitar a largura máxima do container */
         left: 50%;
         top: 50%;
-        transform: translate(-557px, -299px) !important;
+        transform: translate(-157px, -299px);
         /* Centralizar o elemento */
     }
 }
@@ -239,43 +239,18 @@ input {
 /* Media queries para tornar o layout responsivo em dispositivos de diferentes tamanhos */
 
 /* iPhone SE */
-@media only screen and (max-width: 320px) {
-    .ct {
-        width: 70%;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 500px;
-        /* Limitar a largura máxima do container */
-        left: 70%;
-        top: 60%;
-        transform: translate(-244px, 499px);
-        /* Centralizar o elemento */
-    }
-
+@media only screen and (min-width: 360px) and (max-width: 480px) {
     .resultado {
-        height: 60% !important;
-        display: flex;
-        transform: translate(20%, 40%) !important;
+        transform: translate(26%, 40%) !important;
+        height: 50%;
     }
 
-    #nome {
-        color: #00a028;
-        transform: translate(-20px, 13px) !important;
+    .input-box{
+        transform: translate(13%, +580%) !important;
     }
-
-    .input-box {
-        transform: translate(+31.2px, 28px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 185px) !important;
-    }
-    /* Adaptações para iPad Mini, iPad Air, iPad Pro */
-    /* Insira aqui suas adaptações */
-}
-
     /* Adaptações para iPhone SE */
     /* Insira aqui suas adaptações */
-
+}
 
 /* iPhone XR */
 @media only screen and (min-width: 321px) and (max-width: 414px) {
@@ -285,9 +260,6 @@ input {
 
 /* iPhone 12 Pro, iPhone 14 Pro Max */
 @media only screen and (min-width: 375px) and (max-width: 428px) {
-    #nome {
-        top: 80% !important;
-    }
     /* Adaptações para iPhone 12 Pro e iPhone 14 Pro Max */
     /* Insira aqui suas adaptações */
 }
@@ -300,46 +272,9 @@ input {
 
 /* Samsung Galaxy S8+ */
 @media only screen and (min-width: 360px) and (max-width: 480px) {
-    .ct {
-        height: 50% !important;
-        width: 70% !important;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 400px !important;
-        /* Limitar a largura máxima do container */
-        left: 70% !important;
-        top: 60% !important;
-        transform: translate(-244px, 99px) !important;
-        /* Centralizar o elemento */
-    }
-
-    .resultado {
-        height: 60% !important;
-        display: flex;
-        transform: translate(20%, 40%) !important;
-    }
-
-    #nome {
-        color: #00a028;
-        transform: translate(-20px, 13px) !important;
-    }
-
-    .input-box {
-        transform: translate(+31.2px, 28px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 185px) !important;
-    }
-    /* Adaptações para iPad Mini, iPad Air, iPad Pro */
-    /* Insira aqui suas adaptações */
-}
-
-.calculator {
-    display: none;
-}
     /* Adaptações para Samsung Galaxy S8+ */
     /* Insira aqui suas adaptações */
-
+}
 
 /* Samsung Galaxy S20 Ultra */
 @media only screen and (min-width: 360px) and (max-width: 480px) {
@@ -361,73 +296,35 @@ input {
     }
 
     .resultado {
-        height: 60% !important;
-        display: flex;
-        transform: translate(20%, 40%) !important;
+        transform: translate(15%, 80%) !important;
     }
 
     #nome {
-        color: #00a028;
-        transform: translate(-20px, 13px) !important;
+        transform: translate(-5%, 10%) !important;
     }
 
-    .input-box {
-        transform: translate(+31.2px, 28px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 185px) !important;
+    #animacao {
+        display: none;
     }
     /* Adaptações para iPad Mini, iPad Air, iPad Pro */
     /* Insira aqui suas adaptações */
 }
 
-.calculator {
-    display: none;
-}
 /* Surface Duo */
 @media only screen and (min-width: 540px) and (max-width: 720px) {
+    .resultado {
+        transform: translate(25%, +120%) !important;
+        font-size: 60% !important;
+    }
     /* Adaptações para Surface Duo */
     /* Insira aqui suas adaptações */
 }
 
 /* Galaxy Z Fold 5 */
 @media only screen and (min-width: 360px) and (max-width: 480px) {
-    .ct {
-        width: 50% !important;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 300px !important;
-        /* Limitar a largura máxima do container */
-        left: 70% !important;
-        top: 60% !important;
-        transform: translate(-244px, -299px) !important;
-        /* Centralizar o elemento */
-    }
-
-    .resultado {
-        height: 60% !important;
-        display: flex;
-        transform: translate(90%, 40%) !important;
-    }
-
-    #nome {
-        color: #00a028;
-        transform: translate(-20px, 13px) !important;
-    }
-
-    .input-box {
-        transform: translate(+31.2px, 28px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 185px) !important;
-    }
-    /* Adaptações para iPad Mini, iPad Air, iPad Pro */
-    /* Insira aqui suas adaptações */
-}
     /* Adaptações para Galaxy Z Fold 5 */
     /* Insira aqui suas adaptações */
-
+}
 
 /* Asus Zenbook Fold */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
@@ -437,107 +334,20 @@ input {
 
 /* Samsung Galaxy A51/71 */
 @media only screen and (min-width: 360px) and (max-width: 480px) {
-    .ct {
-        height: 75% !important;
-        width: 80% !important;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 500px !important;
-        /* Limitar a largura máxima do container */
-        left: 70% !important;
-        top: 55% !important;
-        transform: translate(-250px, -390px) !important;
-        /* Centralizar o elemento */
-    }
-
-    .resultado {
-        height: 75% !important;
-        display: flex;
-        transform: translate(27%, 40%) !important;
-    }
-
-    #nome {
-        color: #00a028;
-        transform: translate(-85px, 87px) !important;
-    }
-
-    .input-box {
-        transform: translate(+31.2px, 38px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 250px) !important;
-    }
     /* Adaptações para Samsung Galaxy A51/71 */
     /* Insira aqui suas adaptações */
 }
 
 /* Nest Hub */
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-    .ct {
-        height: 95% !important;
-        width: 80% !important;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 500px !important;
-        /* Limitar a largura máxima do container */
-        left: 70% !important;
-        top: 55% !important;
-        transform: translate(-250px, -390px) !important;
-        /* Centralizar o elemento */
-    }
-
-    .resultado {
-        height: 75% !important;
-        display: flex;
-        transform: translate(27%, 40%) !important;
-    }
-
-    #nome {
-        color: #00a028;
-        transform: translate(-85px, 87px) !important;
-    }
-
-    .input-box {
-        transform: translate(+31.2px, 38px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 250px) !important;
-    }
+@media only screen and (min-width: 600px) and (max-width: 960px) {
     /* Adaptações para Nest Hub */
     /* Insira aqui suas adaptações */
 }
 
 /* Nest Hub Max */
-@media only screen and (min-width: 800px) and (max-width: 1280px) {
-    .ct {
-        height: 75% !important;
-        width: 80% !important;
-        /* Ajustar a largura do container para preencher a tela */
-        max-width: 500px !important;
-        /* Limitar a largura máxima do container */
-        left: 70% !important;
-        top: 55% !important;
-        transform: translate(-430px, -327px) !important;
-        /* Centralizar o elemento */
-    }
-
+@media only screen and (min-width: 720px) and (max-width: 1280px) {
     .resultado {
-        height: 75% !important;
-        display: flex;
-        transform: translate(27%, 40%) !important;
-    }
-
-    #nome {
-        color: #00a028;
-        transform: translate(-10px, -7px) !important;
-    }
-
-    .input-box {
-        transform: translate(+31.2px, 28px) !important;
-    }
-
-    .box {
-        transform: translate(+31.2px, 180px) !important;
+        transform: translate(15%, 80%) !important;
     }
     /* Adaptações para Nest Hub Max */
     /* Insira aqui suas adaptações */
